@@ -39,10 +39,12 @@ public class Main{
        }
        int i = m;
       int j = n;
+           // if we want to return arr int len = dp[n][m] int[]arr = new int[len]  take one index len-1
        String ans = "";
         while(i > 0 && j > 0){
           if(s1.charAt(i-1) == s2.charAt(j-1)){
               char x = s1.charAt(i-1);
+                 // arr[index] = s1.charAt(i-1); index--;
               ans = ans+x;
               i--;
               j--;
